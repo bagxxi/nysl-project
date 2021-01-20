@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Northside Youth Soccer League</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <meta name="author" content="Gabriel Balbontin">
+    <meta charset="utf-8" />
+    <meta name "viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/nysl_logo.png">
+    <link rel="stylesheet" href="CSS/style1.css" type="text/css">
+  </head>
+
+  
+  <body class="bodyclass">
+
+    <header class="headerclass">
+    
+        <div class="container1">
+            <div class="item1">
+                <img src="assets/bannerheader.jpg" alt="Boys playing" class="imageheader">
+                <h1 class="headertitle">NORTHSIDE YOUTH SOCCER LEAGUE</h1>
+            </div>
+    
+            <div class="headertext">
+                <h2>Register<img src="assets/nysl_logo.png" alt="NYSL LOGO" id="logonysl"></h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="content1">
+
+        <div class="container2">
+        <nav class="boxone">
+            <ul class="boxul">
+                <li class="boxlinks">
+                    <a class="links" href="home.html">Home</a>
+                </li>
+        
+                <li class="boxlinks">
+                    <a class="links" href="about.html">About</a>
+                </li>
+        
+                <li class="boxlinks">
+                    <a class="links" href="contact.html">Contact</a>
+                </li>
+
+                <li class="boxlinks">
+                    <a class="links" href="game_info.html">Game Info</a>
+                </li>
+
+                <li class="boxlinks">
+                    <a class="links" href="rules.html">Rules of Game</a>
+                </li>
+
+                <li class="boxlinks">
+                    <a class="links" href="registration.html">Registration</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+
+        <div class="container3">
+            <section class="sectioner">
+
+                <h2>REGISTRATION FORM</h2>
+                    <form class="form" action="show_data.html" method="GET">
+                        <label for="FirstName">Player’s First Name: </label><input class="formlabel" type="text" name="FirstName" 
+                        size="50" minlength="3" maxlength="15" placeholder="Type player's first name here" required>
+                        <label for="LastName">Last Name: </label><input class="formlabel"  type="text" name="LastName" size="50" 
+                        minlength="2" maxlength="20" placeholder="Type player's first name here" required> <br>
+                        <label for="Address">Street Address: </label><input class="formlabel"  type="text" name="Address" size="128"
+                        minlength="10" placeholder="Type player's address here" required> <br>
+                        <label for="City">City: </label><input class="formlabel"  type="text" name="City" size="99"
+                        minlength="10" maxlength="30" placeholder="Type player's city here" required>
+                        <label for="ZipCode">Zip Code: </label><input class="formlabel" type="number" name="ZipCode" size="7" 
+                        minlength="5" maxlength="7" required> <br>
+                        <label for="Birthday">Birth Date(mm/dd/yyyy): </label><input class="formlabel" type="date" name="Birthday" size="10" 
+                        value="2015-12-31" min="2002-01-01" max="2015-12-31" required>
+                        <label for="Gender">Gender: </label><input class="formlabel" type="radio" name="Gender" value="Female" required> Female 
+                        <input class="formlabel" type="radio" name="Gender" value="Male"> Male <br>
+                        <label for="Grade">Grade: </label><input class="formlabel" type="radio" name="Grade" value="Pre-School" required> Pre-School 
+                        <input class="formlabel" type="radio" name="Grade" value="First Grade"> 1st 
+                        <input class="formlabel" type="radio" name="Grade" value="Second Grade"> 2nd
+                        <input class="formlabel" type="radio" name="Grade" value="Third Grade"> 3rd 
+                        <input class="formlabel" type="radio" name="Grade" value="Fourth Grade"> 4th
+                        <input class="formlabel" type="radio" name="Grade" value="Fifth Grade"> 5th
+
+                        <h3>Which elementary school do you live near?</h3>
+                        
+                        <label for="School"><h4 class="formtitle"> Closest School: </h4><br></label>
+                            <select name="School">
+                                <option input class="formlabel" name="School" value="AJ Katzenmaier"> AJ Katzenmaier </option>
+                                <option input class="formlabel" name="School" value="Marjorie P Hart"> Marjorie P Hart </option>
+                                <option input class="formlabel" name="School" value="Greenbay"> Greenbay </option>
+                                <option input class="formlabel" name="School" value="North Elementary"> North Elementary </option>
+                                <option input class="formlabel" name="School" value="Howard A Yeager"> Howard A Yeager </option>
+                                <option input class="formlabel" name="School" value="South Elementary"> South Elementary </option>
+                            </select>
+                        
+                        <label for="Position"><h4 class="formtitle"> What position(s) do you normally play? (check all that apply) </h4><br></label>
+                        <input class="formlabel" type="checkbox" name="Position" value="Forward"> Forward 
+                        <input class="formlabel" type="checkbox" name="Position" value="Midfield"> Midfield <br>
+                        <input class="formlabel" type="checkbox" name="Position" value="Defense"> Defense
+                        <input class="formlabel" type="checkbox" name="Position" value="Goalkeeper"> Goalkeeper <br>
+
+                        <label for="UniformSize"><h4 class="formtitle"> Uniform Size: </h4><br></label>
+                        <input class="formlabel" type="radio" name="UniformSize" value="Youth Small" required> Youth Small 
+                        <input class="formlabel" type="radio" name="UniformSize" value="Medium"> Medium <br>
+                        <input class="formlabel" type="radio" name="UniformSize" value="Youth Medium"> Youth Medium
+                        <input class="formlabel" type="radio" name="UniformSize" value="Large"> Large <br>
+                        <input class="formlabel" type="radio" name="UniformSize" value="Youth Large"> Youth Large
+                        <input class="formlabel" type="radio" name="UniformSize" value="Extra-Large"> Extra-Large <br>
+                        <input class="formlabel" type="radio" name="UniformSize" value="Small"> Small <br>
+
+                        <h3>Permission to Play</h3>
+
+                        I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of
+                        the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with
+                        soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities.
+                        I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel
+                        and volunteers,including the facilities used for practices and games, against any claim by or on behalf of
+                        the registrant as a result of the registrant’s participation in the program and/or being transported to or from
+                        NYSL sponsored activities, which transportation.
+                        By writting my name below, I hereby agree and authorizethe above. In addition, by writting my name below, I also acknowledge
+                        that I have read the cancellation policy and agree to its terms. <br><br>
+
+                        <label for="Sign">Parent/Guardian's Signature: </label><input class="formsign" type="text" name="Sign" size="80" 
+                        minlength="15" maxlength="40" placeholder="Parent's name as signature" required>
+                        <label for="SignDate">Date: </label><input class="formsign"  type="date" name="SignDate" size="10" required> <br>
+                        
+                        
+                        <p>
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear">
+                        </p>
+                    </form>
+            </section>
+    
+        </div>
+        
+    </div>
+
+    <footer class="footerclass">
+
+        <div class="containerfoot">
+
+            <div class="footertext">
+                <h5 ><i>Made by Gabriel Balbontin at AwakeLab for NORTHSIDE YOUTH SOCCER LEAGUE ®. 2020, All rights reserved.</i></h5>
+            </div>
+
+            <div class="logofoot">
+                <img src="assets/logosoccer.jpg" >
+            </div>
+        </div>
+
+    </footer>
+
+  </body>
+</html>
